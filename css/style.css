@@ -1,22 +1,26 @@
-/* @font-face {
-  font-family: 'Arial-MT';
-  src: url("../assets/fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 input {
-  font-family: 'Bigelow Rules', cursive;
-}
+  font-family: 'Viaoda Libre', cursive;
+} 
 
 html {
   overflow-x: hidden;
 }
 
+ul, li {
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
-  font-family: 'Bigelow Rules', cursive;
+font-family: 'Viaoda Libre', cursive;
   min-width: 480px;
   min-height: 100vh;
   font-size: 18px;
@@ -37,92 +41,7 @@ body {
   padding: 20px;
 }
 
-.player-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 120px;
-  margin-bottom: 28px;
-}
 
-.play-list {
-  text-align: left;
-}
-
-.play-item {
-  position: relative;
-  padding: 5px;
-  padding-left: 20px;
-  list-style: none;
-  opacity: .8;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.play-item:hover {
-  opacity: 1;
-}
-
-.play-item::before {
-  content: "\2713";  
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-weight: 900;
-}
-
-.item-active::before {
-  color: #C5B358;
-}
-
-.player-icon,
-.slider-icon,
-.change-quote {
-  width: 32px;
-  height: 32px;
-  background-size: 32px 32px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: 0;
-  outline: 0;
-  opacity: .8;
-  cursor: pointer;
-  transition: .3s;  
-}
-
-.player-icon:hover,
-.slider-icon:hover,
-.change-quote:hover {
-  opacity: 1;
-}
-
-.player-icon:active,
-.slider-icon:active,
-.change-quote:active {
-  border: 0;
-  outline: 0;  
-  transform: scale(1.1);
-}
-
-.play {
-  width: 40px;
-  height: 40px;
-  background-size: 40px 40px;
-  background-image: url("../assets/svg/play.svg");
-}
-
-.pause {
-  background-image: url("../assets/svg/pause.svg");
-}
-
-.play-prev {
-  background-image: url("../assets/svg/play-prev.svg");
-}
-
-.play-next {
-  background-image: url("../assets/svg/play-next.svg");
-}
 
 .weather {
   display: flex;
@@ -148,24 +67,25 @@ body {
 }
 
 .weather-icon {
-  font-size: 44px;
+  font-size: 40px;
+  color: #d1a954;
 }
 
 .city {
   width: 170px;
   height: 34px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 24px;
   color: #fff;  
   border: 0;
   outline: 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px ridge #d1a954;
   background-color: transparent;
 }
 
 .city::placeholder {  
-  font-size: 20px;
+  font-size: 22px;
   color: #fff;
   opacity: .6;
 }
@@ -185,18 +105,17 @@ body {
 .slider-icon {
   position: absolute;
   top: 50%;
-  margin-top: -16px;
   cursor: pointer;
 }
 
 .slide-prev {
   left: 20px;
-  background-image: url("../assets/svg/slider-prev.png");
+  background-image: url("../assets/svg/slider-prev.svg");
 }
 
 .slide-next {
   right: 20px;
-  background-image: url("../assets/svg/slider-next.png");
+  background-image: url("../assets/svg/slider-next.svg");
 }
 
 .time {
@@ -208,7 +127,7 @@ body {
 
 .date {
   min-height: 28px;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
@@ -219,7 +138,7 @@ body {
   align-items: center;
   min-height: 48px;
   width: 100vw;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .greeting {
@@ -232,7 +151,7 @@ body {
   flex: 1;
   max-width: 50%;
   padding: 10px;
-  font-size: 40px;
+  font-size: 30px;
   text-align: left;
   color: #fff;
   background-color: transparent;
@@ -277,7 +196,7 @@ body {
 
   .greeting-container {
     min-height: 40px;
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .greeting {
@@ -285,7 +204,7 @@ body {
   }
 
   .name {
-    font-size: 32px;
+    font-size: 25px;
     padding: 5px;
   }
 }

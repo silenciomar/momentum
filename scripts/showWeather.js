@@ -10,7 +10,7 @@ async function getWeather() {
   const res = await fetch(url);
   const data = await res.json();
 
-  if (data.cod === "404") {
+  if (data.cod === "404" || city.value.length === 0) {
     alert('Неправильный ввод данных! Пожалуйста, введите правильные данные!')
   }
 
@@ -18,31 +18,13 @@ async function getWeather() {
   weatherIcon.classList.add(`owf-${data.weather[0].id}`);
   temperature.textContent = `${Math.round(data.main.temp)}°C`;
   weatherDescription.textContent = data.weather[0].description;
-  wind.textContent = `Wind speed: ${data.wind.speed} m/s`
-  humidity.textContent = `Humidity: ${data.main.humidity}%`
+  wind.textContent = `Wind speed: ${Math.round(data.wind.speed)} m/s`
+  humidity.textContent = `Humidity: ${Math.round(data.main.humidity)}%`
 }
-/* function getWeather() {
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city.value}&lang=en&appid=ca55bd165376b22b02d4119f986cb3f4&units=metric`)
-    .then(res => { return res.json() })
-    .then(data => {
-      weatherIcon.className = "weather-icon owf";
-      weatherIcon.classList.add(`owf-${data.weather[0].id}`);
-      temperature.textContent = `${Math.round(data.main.temp)}°C`;
-      weatherDescription.textContent = data.weather[0].description;
-      wind.textContent = `Wind speed: ${data.wind.speed} m/s`
-      humidity.textContent = `Humidity: ${data.main.humidity}%`
-      console.log('start')
-    })
-    .catch(() => {
-      console.log('Город не найден')
-    })
-} */
-getWeather()
 
 city.addEventListener("keypress", (e) => {
   if (e.code === "Enter") {
     getWeather();
-    city.blur();
   }
 });
 
