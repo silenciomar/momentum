@@ -1,17 +1,31 @@
-const quote = document.querySelector('.quote');
-const author = document.querySelector('.author');
-const btnQuotes = document.querySelector('.change-quote');
+export function getQuotes() {
+  const quote = document.querySelector('.quote');
+  const author = document.querySelector('.author');
+  const btnQuotes = document.querySelector('.change-quote');
 
-async function getQuotes() {
-  const quotes = './scripts/quotesEng.json';
-  const res = await fetch(quotes);
-  const data = await res.json();
+  function getQuotes() {
+    let quotes;
+    if (localStorage.getItem('lang') === 'Ru') {
+      quotes = `./scripts/quotesRu.json`;
+    } else {
+      quotes = `./scripts/quotesEng.json`;
+    }
 
-  let randomNum = Math.floor(Math.random() * (data.length))
-  quote.textContent = data[randomNum].text;
-  author.textContent = data[randomNum].author;
+    fetch(quotes)
+      .then(res => res.json())
+      .then(data => {
+        let randomNum = Math.floor(Math.random() * (data.length))
+        quote.textContent = data[randomNum].text;
+        author.textContent = data[randomNum].author;
+      });
+
+
+  }
+
+  btnQuotes.addEventListener('click', getQuotes);
+  window.addEventListener('load', () => {
+    getQuotes()
+  });
 }
-getQuotes();
 
-btnQuotes.addEventListener('click', getQuotes);
-document.addEventListener('onload', getQuotes);
+getQuotes();

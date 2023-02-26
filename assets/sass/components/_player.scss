@@ -7,6 +7,7 @@
   position: relative;
   padding: 5px 10px;
   width: 320px;
+  transition: all 0.3s ease-in-out;
 }
 
 .player-controls {
@@ -162,17 +163,21 @@
     margin: 0px;
   }
 }
+
 .song-details {
   text-align: center;
   margin: 5px 0 10px;
 }
+
 .song-name {
   font-size: 18px;
 }
+
 .song-artist {
   font-size: 16px;
   opacity: 0.9;
 }
+
 .progress-area {
   height: 6px;
   width: 100%;
@@ -185,6 +190,7 @@
     }
   }
 }
+
 .progress-bar {
   height: inherit;
   width: 0%;
@@ -192,6 +198,7 @@
   background: #d1a954;
   position: relative;
 }
+
 .progress-bar::before {
   content: "";
   position: absolute;
@@ -205,6 +212,7 @@
   opacity: 0;
   transition: 0.2s ease opacity;
 }
+
 .timer {
   display: flex;
   justify-content: space-between;
