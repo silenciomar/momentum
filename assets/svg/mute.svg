@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100.000000" height="100.000000" preserveAspectRatio="xMidYMid meet"><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+
+
+<g class="currentLayer" style=""><title>Layer 1</title><g transform="translate(0,100) scale(0.10000000149011612,-0.10000000149011612) " fill="#d1a954" stroke="#d1a954" id="svg_1" class="selected" fill-opacity="1" stroke-width="10" stroke-opacity="1">
+<path d="M405 770 l-110 -100 -77 0 c-108 0 -108 0 -108 -170 0 -170 0 -170 108 -170 l77 0 110 -100 c61 -55 117 -99 125 -97 13 2 15 51 15 367 0 316 -2 365 -15 367 -8 2 -64 -42 -125 -97z m123 -446 l-3 -175 -105 95 -105 95 -6 108 -5 108 -2 -103 -2 -103 -82 3 -83 3 0 145 0 145 85 3 85 3 110 100 110 101 3 -176 c1 -97 1 -255 0 -352z" id="svg_2" fill="#d1a954" stroke-width="10" stroke="#d1a954"/>
+<path d="M302 580 c0 -14 2 -19 5 -12 2 6 2 18 0 25 -3 6 -5 1 -5 -13z" id="svg_3" fill="#d1a954" stroke-width="10" stroke="#d1a954"/>
+<path d="M640 613 c0 -4 23 -31 52 -60 l52 -53 -54 -55 c-29 -30 -51 -58 -47 -62 4 -4 32 18 62 47 l55 54 55 -54 c30 -29 58 -51 62 -47 4 4 -18 32 -47 62 l-54 55 54 55 c29 30 51 58 47 62 -4 4 -32 -18 -62 -47 l-55 -54 -53 52 c-50 50 -67 61 -67 45z" id="svg_4" fill="#d1a954" stroke-width="10" stroke="#d1a954"/>
+</g></g></svg>

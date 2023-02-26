@@ -1,0 +1,23 @@
+{
+  "name": "momentum",
+  "version": "1.0.0",
+  "description": "momentum hogwarts edition by silenciomar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch ./assets/sass/style.scss ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silenciomar/momentum.git"
+  },
+  "keywords": [
+    "momentum"
+  ],
+  "author": "silenciomar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silenciomar/momentum/issues"
+  },
+  "homepage": "https://github.com/silenciomar/momentum#readme"
+}

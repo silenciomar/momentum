@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/snitch.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Hogwarts Momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="song-details">
+        <p class="song-name">Double Trouble</p>
+        <p class="song-artist">OST Harry Potter and the Prisoner of Azkaban</p>
+      </div>
+      <div class="progress-area">
+        <div class="progress-bar"></div>
+        <div class="timer">
+          <span class="current">0:00</span>
+          <span class="max-duration"></span>
+        </div>
+        <audio class="song-audio" src=""></audio>
+      </div>
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <div class="volume-container">
+        <button class="volume-down"></button>
+        <input class="volume-range" type="range" min="0" max="100" value="5">
+        <button class="volume-up"></button>
+        <button class="playlist playlist-icon"></button>
+      </div>
+      <div class="play-list">
+        <div class="play-list__header">
+          <span>Playlist</span> 
+          <button class="close-icon">X</и>
+          </div>
+          <ul class="playlist__body">
+          </ul>
+        </div>
+      </div>
+      <div class="weather">
+        <input type="text" class="city"/>
+        <i class="weather-icon"></i>
+        <div class="weather-error"></div>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="slider-icons">
+        <button class="slide-prev slider-icon">
+          
+        </button>
+        <button class="slide-next slider-icon"></button>
+      </div>
+      <time class="time"></time>
+      <date class="date"></date>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input type="text" class="name"/>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="settings">
+      <button class="settings-btn"></button>
+      <div class="settings-content">
+        <div class="settings__header">
+          <span>Settings</span>
+          <button class="close-settings">X</и>
+          </div>
+          
+          <ul class="settings__body">
+            <li class="settings-item" id="language">
+              <p>Chooose language:</p>
+              <span class="settings-lang">En</span>
+            </li>
+            <li class="settings-item" id="weather">
+              <p>Weather panel:</p>
+              <span>Hide</span>
+            </li>
+            <li class="settings-item" id="player">
+              <p>Music player:</p>
+              <span>Hide</span>
+            </li>
+            <li class="settings-item" id="todo">
+              <p>Todo List:</p>
+            <span>Hide</span>
+          </li>
+          <li class="settings-item" id="time">
+            <p>Time:</p>
+            <span>Hide</span>
+          </li>
+          <li class="settings-item" id="date">
+            <p>Date:</p>
+            <span>Hide</span>
+          </li>
+          <li class="settings-item" id="quotes">
+            <p>Quotes:</p>
+            <span>Hide</span>
+          </li>
+          <li class="settings-item" id="greet">
+            <p>Greeting:</p>
+            <span>Hide</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="quotes-content">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </div>
+    <div class="todo-list" >
+      <button class="todo-btn"></button>
+      <div class="todo-content">
+        <div class="todo__header">
+          <span>To-Do LIST</span>
+          <button class="close-todo">X</и>
+          </div>
+          <div class="todo">
+            <div class="todo__input">
+              <input class="todo__text" type="text">
+              <span class="todo__add"></span>
+            </div>
+            <select class="todo__options">
+              <option value="active">Active</option>
+              <option value="completed">Done</option>
+              <option value="deleted">Delete</option>
+            </select>
+            <ul class="todo__items" data-todo-option="active"></ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script type="module" src="scripts/showTimeDate.js"></script>
+    <script type="module" src="scripts/showGreeting.js"></script>
+    <script type="module" src="scripts/slider.js"></script>
+  <script type="module" src="scripts/showWeather.js"></script>
+  <script type="module" src="scripts/getQuotes.js"></script>
+  <script type="module" src="scripts/playMusic.js"></script>
+  <script type="module" src="scripts/quotesEng.json"></script>
+  <script type="module" src="scripts/getSettings.js"></script>
+  <script type="module" src="scripts/todoList.js"></script>
+</body>
+</html>
